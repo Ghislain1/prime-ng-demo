@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { GetStartedComponent } from './components/get-started/get-started.component';
 
-const routes: Routes = [{ path: 'started', component: GetStartedComponent }]
+const routes: Routes = [{ path: 'started', component: GetStartedComponent }];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
