@@ -19,12 +19,17 @@ npm run deploy
 Set-Location docs
 
 # Copy
-Copy-Item index.html 404.html -PassThru
-
-
+Copy-Item index.html  404.html -PassThru
 
 #Preview location
 cd..
+
+# Copy folder docs
+Copy-Item docs  ../docs -PassThru
+
+
+
+
 
 
 
