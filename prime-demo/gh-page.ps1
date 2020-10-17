@@ -25,7 +25,7 @@ Copy-Item index.html  404.html -PassThru
 cd..
 
 # Copy folder docs
-Copy-Item docs  ../docs -PassThru -Force -Recurse  
+Copy-Item docs  ../ -PassThru -Force -Recurse  
 
 # re,ove folder docs
 Remove-Item  docs -force  -Recurse 
