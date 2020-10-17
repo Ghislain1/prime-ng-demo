@@ -15,13 +15,19 @@ export class AppComponent {
 
   constructor() {
     this.items = [
-      { label: 'Home', icon: 'pi pi-fw pi-home' },
-      { label: 'Car', icon: 'pi pi-fw pi-calendar', url: 'car' },
+      { label: 'Home', icon: 'pi pi-fw pi-home', routerLink: ['/home'] },
+      { label: 'Car', icon: 'pi pi-fw pi-calendar', routerLink: ['/car'] },
       { label: 'Edit', icon: 'pi pi-fw pi-pencil' },
       { label: 'Documentation', icon: 'pi pi-fw pi-file' },
       { label: 'Settings', icon: 'pi pi-fw pi-cog' }
     ];
 
-    // this.activeItem;
+    this.activeItem = this.items[0];
+  }
+
+  onClick(event?: any): void {
+    const dsd = JSON.stringify(event);
+    console.log('ONCLIC *********' + dsd);
+    this.activeItem = event.item;
   }
 }
