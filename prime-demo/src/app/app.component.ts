@@ -16,12 +16,12 @@ export class AppComponent {
   constructor() {
     this.items = [
       { label: 'Home', icon: 'pi pi-fw pi-home' },
-      { label: 'Calendar', icon: 'pi pi-fw pi-calendar' },
+      { label: 'Car', icon: 'pi pi-fw pi-calendar', url: 'car' },
       { label: 'Edit', icon: 'pi pi-fw pi-pencil' },
       { label: 'Documentation', icon: 'pi pi-fw pi-file' },
       { label: 'Settings', icon: 'pi pi-fw pi-cog' }
     ];
 
-    this.activeItem = this.items[0];
+    // this.activeItem;
   }
 }
